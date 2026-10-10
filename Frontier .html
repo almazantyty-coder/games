@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Frontier</title>
 <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -95,6 +95,22 @@ body.endm .p,body.endm #obj,body.endm #prm,body.endm #xh,body.endm #wpa,body.end
 #crskip{position:fixed;right:18px;bottom:18px;z-index:15;display:none;background:rgba(20,12,6,.8);color:#f6ecd2;border:1px solid rgba(224,180,90,.7);padding:8px 16px;border-radius:3px;font:14px Georgia,serif;cursor:pointer;letter-spacing:.1em;pointer-events:auto}#crskip:hover{background:rgba(90,60,30,.9)}
 #endcard{position:fixed;inset:0;z-index:15;display:none;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:radial-gradient(ellipse at center,rgba(0,0,0,.05),rgba(0,0,0,.6));pointer-events:auto;text-align:center;color:#f6ecd2}#endcard h1{font:64px Rye,Georgia,serif;margin:0;color:#ffd98a;letter-spacing:.2em;text-shadow:0 3px 14px #000}#endcard p{margin:0 0 10px;font-size:17px;color:#e8dcc0;text-shadow:0 2px 8px #000}.ecb{display:block;min-width:260px;background:rgba(20,12,6,.85);color:#f6ecd2;border:1px solid rgba(224,180,90,.8);padding:12px 22px;border-radius:3px;font:17px Georgia,serif;letter-spacing:.08em;cursor:pointer}.ecb:hover{background:rgba(110,72,34,.95)}
 #hwd{position:fixed;inset:0;z-index:16;display:none;pointer-events:none;color:#f1e6cf;font-family:Georgia,serif}#hwd.on{display:block}#hwd .hp{position:absolute;left:18px;top:18px;bottom:18px;width:min(440px,92vw);background:rgba(14,10,6,.86);border:1px solid rgba(224,180,90,.55);border-radius:4px;padding:16px 18px;overflow:auto;pointer-events:auto;backdrop-filter:blur(4px)}#hwd h2{margin:0 0 4px;font:23px Rye,Georgia,serif;color:#ffd98a}#hwd .hn{color:#a99c7c;font-size:12px;letter-spacing:.2em;margin-bottom:8px}#hwd p{font-size:14.5px;line-height:1.55;margin:8px 0}#hwd pre{margin:10px 0 0;padding:10px;background:#0b0805;border:1px solid rgba(224,180,90,.3);border-radius:3px;font:11.5px/1.45 Consolas,Menlo,monospace;color:#e7d9b4;white-space:pre-wrap;overflow-x:auto}#hwd .nv{position:absolute;right:18px;bottom:18px;display:flex;gap:8px;pointer-events:auto}#hwd .nv button,#hwd .ex{background:rgba(20,12,6,.88);color:#f6ecd2;border:1px solid rgba(224,180,90,.7);padding:9px 18px;border-radius:3px;font:15px Georgia,serif;cursor:pointer}#hwd .nv button:hover,#hwd .ex:hover{background:rgba(110,72,34,.95)}#hwd .ex{position:absolute;right:18px;top:18px;pointer-events:auto}#hwd .hint{position:absolute;right:18px;bottom:66px;font-size:12px;color:#a99c7c;text-shadow:0 1px 4px #000}
+
+.mb.rec{box-shadow:0 0 0 2px rgba(255,224,138,.75)}
+#tc{position:fixed;inset:0;z-index:6;display:none;pointer-events:none;touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}body.tcon #tc{display:block}
+#tcLook{position:absolute;inset:0;pointer-events:auto;touch-action:none}
+#tcJoy{position:absolute;left:4vmin;bottom:6vmin;width:30vmin;height:30vmin;max-width:170px;max-height:170px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.35);pointer-events:auto;touch-action:none}
+#tcKnob{position:absolute;left:50%;top:50%;width:42%;height:42%;margin:-21% 0 0 -21%;border-radius:50%;background:rgba(255,224,150,.55);border:2px solid rgba(255,255,255,.7)}
+.tb{position:absolute;pointer-events:auto;touch-action:none;border-radius:50%;background:rgba(30,20,10,.58);color:#fff;border:2px solid rgba(255,255,255,.5);font:700 10px Georgia,serif;width:11.5vmin;height:11.5vmin;max-width:66px;max-height:66px;padding:0;line-height:1.05}.tb.on{background:rgba(224,170,60,.85);color:#222}
+#tcFire{right:4vmin;bottom:7vmin;width:21vmin;height:21vmin;max-width:124px;max-height:124px;font-size:16px;background:rgba(190,50,40,.62)}
+#tcAim{right:27vmin;bottom:5vmin}#tcRel{right:27vmin;bottom:18vmin}#tcAct{right:4vmin;bottom:32vmin}#tcMnt{right:17vmin;bottom:32vmin}#tcHrs{right:30vmin;bottom:32vmin}#tcFsh{right:43vmin;bottom:32vmin}#tcShp{right:43vmin;bottom:19vmin}#tcVw{right:43vmin;bottom:6vmin}#tcRun{left:38vmin;bottom:6vmin}
+#tcW{position:absolute;top:2vmin;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:6px;background:rgba(20,12,6,.6);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:3px 8px;color:#fff;font:12px Georgia,serif;pointer-events:auto}#tcW button{background:none;border:0;color:#ffe9b0;font-size:18px;padding:2px 8px}
+#tcMenu{right:2vmin;top:2vmin}
+#tcSheet{position:absolute;right:2vmin;top:15vmin;display:none;flex-direction:column;gap:6px;pointer-events:auto}#tcSheet.on{display:flex}#tcSheet button{background:rgba(20,12,6,.9);color:#f6ecd2;border:1px solid rgba(224,180,90,.7);padding:9px 14px;border-radius:4px;font:14px Georgia,serif;text-align:left}
+#tcRot{position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.88);color:#ffe9b0;display:none;align-items:center;justify-content:center;text-align:center;font:22px Rye,Georgia,serif;padding:20px}
+@media (orientation:portrait){body.tcon #tcRot{display:flex}}
+body.mob:not(.mobp) .p{display:none!important}body.mob #gfx.on{display:grid!important;z-index:21;max-height:80vh;overflow:auto}body.mob #shop,body.mob #info{z-index:20}body.mob #hint{display:none}
+body.mob.mobp .p{z-index:19}
 </style></head><body>
 <div id="vig"></div><div id="uw"></div><div class="lb" id="lbT"></div><div class="lb" id="lbB"></div><div id="fade"></div><div id="ttl"><h2></h2><p></p></div><div id="hint">Press any key to return</div><div id="grain"></div><div class="p" id="obj"><small id="ch"></small><div id="ot"></div><div id="od"></div><div id="oi"></div></div><div id="wpa">&#9650;</div><div id="prm"></div><div id="dlg"><div id="dn"></div><div id="dt"></div><i>E / click to continue</i></div>
 <div class="p" id="gfx"><b style="color:var(--acc)">Graphics</b>
@@ -107,6 +123,7 @@ body.endm .p,body.endm #obj,body.endm #prm,body.endm #xh,body.endm #wpa,body.end
 <label>Field of view<input type="range" data-k="fov" min="-10" max="25" step="1"></label><label>Post effects<select data-k="pp"><option value="0">Off<option value="1">On</select></label><label>God rays<input type="range" data-k="rays" min="0" max="1" step=".05"></label>
 <label class="chk"><input type="checkbox" data-kb="fol"><span>Foliage Plus <small>leaf-card trees, ferns, vines and moss</small></span></label>
 <label class="chk"><input type="checkbox" data-kb="gra"><span>Grass Plus <small>tufts, wider blades and flower heads</small></span></label>
+<label class="chk"><input type="checkbox" data-kb="ad"><span>Adaptive resolution <small>keeps the frame rate steady by adjusting sharpness</small></span></label>
 <label class="chk"><input type="checkbox" data-kb="atm"><span>Atmospheric Plus <small>pollen, fireflies, falling leaves and mist</small></span></label></div><div id="dmg"></div><div id="frost"></div>
 <div class="p" id="bmp"><h1>Benchmark</h1><div style="margin:6px 0 10px;max-width:440px;line-height:1.5">The trailer has finished. Want to test this device? The benchmark runs every system for about <b>5 minutes</b>: terrain and grass, god rays, water and rain, snow trails, wildlife, heavy combat, the town, night lighting and a stress test. It then recommends graphics settings, and the trailer plays on loop afterwards.</div><div class="row"><button class="bt" id="bmr1">Run benchmark (~5 min)</button><button class="bt" id="bmr2">Skip: loop trailer</button></div><div style="margin-top:8px;font-size:11px;color:#cdbf9a">Enter = run &middot; Esc = skip</div></div>
 <div id="bml"><h1>BENCHMARKING</h1><div id="bmt" style="margin:8px 0">Preparing...</div><div class="bar" style="width:min(420px,80vw)"><i id="bmb"></i></div><div id="bmf" style="margin-top:8px;color:var(--acc)"></div><div style="margin-top:14px;font-size:11px;color:#9a8c6a">Please keep this tab visible. Loading the world for each test...</div></div>
@@ -125,7 +142,7 @@ body.endm .p,body.endm #obj,body.endm #prm,body.endm #xh,body.endm #wpa,body.end
 <div id="msg">Generating world…</div>
 <div id="menu"><div id="mpanel">
  <div id="mmain"><h1 id="mtitle">FRONTIER</h1><div id="mmap"></div>
-  <button class="mb" id="mplay">&#9654; Play</button><button class="mb" id="msecret" style="display:none">? ? ?</button><button class="mb" id="mswitch" style="display:none"></button><button class="mb" id="mmod">&#128736; Frontier Modding Tools</button><button class="mb" id="msett">&#9881; Settings</button><button class="mb" id="mbench">&#9201; Benchmark</button><button class="mb" id="mexp">CODE</button>
+  <button class="mb" id="mplay">&#9654; Play</button><button class="mb" id="msecret" style="display:none">? ? ?</button><button class="mb" id="mswitch" style="display:none"></button><button class="mb" id="mmod">&#128736; Frontier Modding Tools</button><button class="mb" id="mmob">&#128241; Mobile mode</button><button class="mb" id="msett">&#9881; Settings</button><button class="mb" id="mbench">&#9201; Benchmark</button><button class="mb" id="mexp">CODE</button>
   <div id="mhint">Leave this screen idle for a minute to watch the trailer.</div></div>
  <div id="mexpp" style="display:none"><h1 style="font-size:34px">CODE</h1>
   <div id="mcodebox"><input id="mcode" maxlength="16" placeholder="Enter code" autocomplete="off"><button class="mb" id="mredeem" style="margin-top:8px">Submit</button></div><div id="mmsg"></div>
@@ -664,7 +681,7 @@ function vmUpdate(dt,T){vm.visible=fp&&!pl.dead;if(!vm.visible)return;const u=vm
 
 /* ---- natural rain in Frontier (real-world timing, ~1 event / 20 min) ---- */
 const NATR={on:false,mine:false,end:0,next:0,int:()=>20*60e3*(window.__natScale||1)};NATR.next=performance.now()+NATR.int()*(.85+Math.random()*.3);
-function natRainTick(){if(MAPJ||MAPM||!GAME.on||TR.on||MENUON||EDITING||(END.on||SEC.on))return;const now=performance.now(),snowy=biome(pl.pos.x,pl.pos.z)[0]>.3||bz>.15;
+function natRainTick(){if(MAPJ||MAPM||!GAME.on||TR.on||MENUON||EDITING||(END.on||SEC.on))return;const now=performance.now(),snowy=bsnow()>.3||bz>.15;
  if(NATR.on){if(!RAIN.on||snowy||now>NATR.end){if(RAIN.on&&NATR.mine){RAIN.on=false;$('rn').checked=false}NATR.on=false;NATR.mine=false;NATR.next=now+NATR.int()*(.85+Math.random()*.3)}}
  else if(now>=NATR.next){if(snowy||RAIN.on)NATR.next=now+45e3;else{RAIN.on=true;$('rn').checked=true;NATR.on=true;NATR.mine=true;NATR.end=now+(140+Math.random()*120)*1000*(window.__natScale||1);toast('Rain is moving in...')}}}
 /* ---- barrels: deterministic, small chance of cash, claims persist ---- */
@@ -872,7 +889,7 @@ const rain=new THREE.LineSegments(rnG,new THREE.LineBasicMaterial({color:0xb8c8d
 const DRN=1400,drP=new Float32Array(DRN*3),drA=new Float32Array(DRN*3);for(let i=0;i<DRN;i++){drP[i*3]=(Math.random()-.5)*60;drP[i*3+2]=(Math.random()-.5)*60}
 const drG=new THREE.BufferGeometry();drG.setAttribute('position',new THREE.BufferAttribute(drA,3));const drM=new THREE.PointsMaterial({map:softT,color:0xffffff,size:.5,transparent:true,opacity:0,depthWrite:false}),drift=new THREE.Points(drG,drM);drift.frustumCulled=false;scene.add(drift);
 let brT=0,wkT=0;
-function fxTick(dt,T){if(SEC.on)secTick(dt);if(MAPJ)jdTick(dt);if(MAPM){if(!EDITING&&GAME.on)codeTick(dt);uiTick()}camera.updateMatrixWorld();SUNV.value.copy(sunL.position).sub(sunL.target.position).normalize().transformDirection(camera.matrixWorldInverse);atmTick(dt,T);if(MAPJ&&!TR.on){jrT-=dt;if(jrT<=0){RAIN.on=!RAIN.on;$("rn").checked=RAIN.on;jrT=RAIN.on?50+Math.random()*50:110+Math.random()*100}}if(IDOL)IDOL.rotation.y+=dt*.6;if(MAPM)wxTick(dt,T);rnK+=((RAIN.on?1:0)-rnK)*Math.min(1,dt*.7);WETU.value=rnK;const px=pl.pos.x,pz=pl.pos.z,b=biome(px,pz);
+function fxTick(dt,T){adaptTick(dt);mobTick(dt);if(SEC.on)secTick(dt);if(MAPJ)jdTick(dt);if(MAPM){if(!EDITING&&GAME.on)codeTick(dt);UIT+=dt;if(UIT>.1){UIT=0;uiTick()}}camera.updateMatrixWorld();SUNV.value.copy(sunL.position).sub(sunL.target.position).normalize().transformDirection(camera.matrixWorldInverse);atmTick(dt,T);if(MAPJ&&!TR.on){jrT-=dt;if(jrT<=0){RAIN.on=!RAIN.on;$("rn").checked=RAIN.on;jrT=RAIN.on?50+Math.random()*50:110+Math.random()*100}}if(IDOL)IDOL.rotation.y+=dt*.6;if(MAPM)wxTick(dt,T);rnK+=((RAIN.on?1:0)-rnK)*Math.min(1,dt*.7);WETU.value=rnK;const px=pl.pos.x,pz=pl.pos.z,b=biome(px,pz);
  rain.visible=rnK>.03;if(rain.visible){rain.material.opacity=.65*rnK*(MAPM?PROJ.weather.intensity+.3:1);const wx=3+bz*8;for(let i=0;i<BRN;i++){let x=rnP[i*3]+wx*dt*.3,y=rnP[i*3+1]-24*dt,z=rnP[i*3+2];if(y<-2)y+=30;x=((x+25)%50+50)%50-25;z=((z+25)%50+50)%50-25;rnP[i*3]=x;rnP[i*3+1]=y;rnP[i*3+2]=z;const X=px+x,Y=pl.pos.y+y,Z=pz+z;rnA[i*6]=X;rnA[i*6+1]=Y;rnA[i*6+2]=Z;rnA[i*6+3]=X-wx*.02;rnA[i*6+4]=Y-1.3;rnA[i*6+5]=Z}rnG.attributes.position.needsUpdate=true;if(Math.random()<dt*40)ripple(px+(Math.random()-.5)*40,pz+(Math.random()-.5)*40,.4)}
  const dk=MAPJ?0:MAPM?bz*.6:bz*(.35+.65*b[0]);drift.visible=dk>.04;if(drift.visible){drM.opacity=.5*dk;const sp=10+bz*8;for(let i=0;i<DRN;i++){let x=drP[i*3]+sp*dt*(.6+((i*7)%10)/10),z=drP[i*3+2]+Math.sin(T+i)*.8*dt;x=((x+30)%60+60)%60-30;z=((z+30)%60+60)%60-30;drP[i*3]=x;drP[i*3+2]=z;drA[i*3]=px+x;drA[i*3+2]=pz+z;drA[i*3+1]=H(px+x,pz+z)+.15+((i*13)%10)*.12}drG.attributes.position.needsUpdate=true}
  const cold=MAPJ?0:MAPM?WXs.cold:Math.max(bz*.8,b[0]*.9)+((tod>.8||tod<.2)?.2:0);brT-=dt;if(cold>.3&&brT<=0&&!pl.dead&&!pl.swim){brT=1.6+Math.random()*.8-Math.min(pl.sp*.1,.7);puff(V3(pl.pos.x+Math.sin(pl.fy)*.18,pl.pos.y+1.62+(HRS.mounted?.85:0)-pl.sink,pl.pos.z+Math.cos(pl.fy)*.18),0xe8f0f8,1,.3,.16,1.4)}
@@ -984,7 +1001,7 @@ function atmTick(dt,T){if(!gfx.atm)return;const px=pl.pos.x,pz=pl.pos.z,py=pl.po
 function setBeta(){try{OG.traverse(m=>{if(m.userData.fb)m.visible=!!gfx.fol;else if(m.userData.fs)m.visible=!gfx.fol})}catch(e){}props.forEach(p=>{p.visible=p.userData.beta?!!gfx.fol:p.userData.hasAlt?!gfx.fol:true});grass.visible=!gfx.gra;grass2.visible=!!gfx.gra;UB.value=gfx.gra?1:0;gg2.instanceCount=Math.floor(BN2*gfx.gr);atm.visible=!!gfx.atm;document.querySelectorAll('[data-kb]').forEach(e=>e.checked=!!gfx[e.dataset.kb])}
 document.querySelectorAll('[data-kb]').forEach(e=>e.onchange=()=>{gfx[e.dataset.kb]=e.checked?1:0;applyGfx()});
 /* ---------- graphics settings ---------- */
-const gfx={rs:1,sh:2048,gr:.85,pr:.7,vd:1,fov:0,pp:1,rays:.8,fol:1,gra:1,atm:1},PRE={Low:{rs:.7,sh:0,gr:.25,pr:.25,vd:.7,pp:0,rays:0,fol:0,gra:0,atm:0},Medium:{rs:.85,sh:1024,gr:.5,pr:.45,vd:.9,pp:1,rays:.5,fol:1,gra:0,atm:0},High:{rs:1,sh:2048,gr:.85,pr:.7,vd:1,pp:1,rays:.8,fol:1,gra:1,atm:1},Ultra:{rs:1.25,sh:4096,gr:1,pr:1,vd:1.4,pp:1,rays:1,fol:1,gra:1,atm:1}};
+const gfx={rs:1,sh:2048,gr:.85,pr:.7,vd:1,fov:0,pp:1,rays:.8,fol:1,gra:1,atm:1,ad:0},PRE={Low:{rs:.7,sh:0,gr:.25,pr:.25,vd:.7,pp:0,rays:0,fol:0,gra:0,atm:0},Medium:{rs:.85,sh:1024,gr:.5,pr:.45,vd:.9,pp:1,rays:.5,fol:1,gra:0,atm:0},High:{rs:1,sh:2048,gr:.85,pr:.7,vd:1,pp:1,rays:.8,fol:1,gra:1,atm:1},Ultra:{rs:1.25,sh:4096,gr:1,pr:1,vd:1.4,pp:1,rays:1,fol:1,gra:1,atm:1}};
 function applyGfx(){setBeta();setTimeout(fitRT,0);renderer.setPixelRatio(Math.min(devicePixelRatio,2)*gfx.rs);renderer.setSize(innerWidth,innerHeight);sunL.castShadow=gfx.sh>0;
  if(gfx.sh>0&&sunL.shadow.mapSize.x!==gfx.sh){sunL.shadow.mapSize.set(gfx.sh,gfx.sh);if(sunL.shadow.map){sunL.shadow.map.dispose();sunL.shadow.map=null}}
  gg.instanceCount=Math.floor(BN*gfx.gr);props.forEach(p=>p.count=Math.floor(p.userData.n*gfx.pr));document.querySelectorAll('[data-k]').forEach(e=>e.value=gfx[e.dataset.k])}
@@ -1244,7 +1261,7 @@ function storyTick(dt,T){if(!ST.on||TR.on){beam.visible=false;return}const o=ST.
  if(wp){beam.visible=true;beam.position.set(wp[0],H(wp[0],wp[1])+40,wp[1]);const d=Math.hypot(wp[0]-pl.pos.x,wp[1]-pl.pos.z);setObjUI(o,d|0);
   $('wpa').style.opacity=1;$('wpa').style.transform='rotate('+(-(Math.atan2(wp[0]-pl.pos.x,wp[1]-pl.pos.z)-yaw-Math.PI))+'rad)'}else{beam.visible=false;$('wpa').style.opacity=0;if(o)setObjUI(o,null)}
  const n=nearTalker(),cc=nearCarcass(),nb=nearBarrel();let t='';if(n)t='E - Talk to '+n.name;else if(cc)t='E - Skin '+cc.s.n;else if(nb)t='E - Search barrel';else if(!HRS.mounted&&HRS.h&&HRS.h.o.position.distanceTo(pl.pos)<4)t='F - Mount';else if(HRS.mounted&&pl.sp<1)t='F - Dismount';else if(nearHub()&&!SHOP)t='B - Trade';else if(canFish())t='G - Cast fishing line';
- $('prm').textContent=t;$('prm').style.opacity=t?1:0}
+ $('prm').textContent=mobPrompt(t);$('prm').style.opacity=t?1:0}
 function ensureWorld(){if(ST.built||MAPM)return;ST.built=1;MAPJ?STBJ():STB()}
 function startStory(){ST.on=true;$('obj').classList.add('on');ensureWorld();startChapter(0)}
 function STB(){
@@ -1863,12 +1880,58 @@ async function runDemo(){if(EDS.demo||!EDITING)return;EDS.demo=true;const cap=t=
  cap('9 / 9   Playtest, then EXPORT HTML to get one single file');showTab('test');await sleep(800);startPlay(true);await sleep(3500);stopPlay();await sleep(800);cap('Now go build something.');await sleep(2500)}catch(e){dbg('Demo error: '+e.message,1)}cap('');EDS.demo=false}
 Object.assign(window.__g,{HWD,hwdOpen,hwdShow,hwdClose,hwdRender,creditsDone,startCredits,creditsHTML,endBegin,SEC,END,CHS,startSecret,caveEnter,endFinish,secTick,achShow,redeem,secretHint,WPN,OWN,setWeapon,fire,pl,startCredits,JD,JDF,jdTick,jdMake,CHJ,startChapter,O,NPCS,ST,say,scene,dbgState:()=>({game:GAME.on,tr:TR.on,menu:MENUON,editing:EDITING,bz,nat:NATR,rain:RAIN.on,snow:biome(pl.pos.x,pl.pos.z)[0]}),H,HT,GY,FLOORS,colNear,animalsUpdate,barrels,nearBarrel,openBarrel,BCL,NATR,natRainTick,props,colliders,enemies,spawnE,mix,RAIN,getBz:()=>bz,setBzT:v=>{bzT=v},setBz:v=>{bz=v},meshH,biome,renderer,PROJ,EDS,ECM,BRS,brushApply,paintApply,flushDirty,showTab,startPlay,stopPlay,exportHTML,rebuildFoliage,popAnimals,regenWorld,objAdd,OBJS,FAPI,runCode,enterEditor,newAnimal,uiNew,runDemo,defProj,sget,sset,SG,HG,VG,applyProject,showCustomMenu,bootProject,SP,perfTick,codeTick});
 
+/* ================= MOBILE MODE: one-tap low graphics + touch controls + adaptive resolution ================= */
+var UIT=0;
+const BSN={t:0,v:0};function bsnow(){const n=performance.now();if(n-BSN.t>300){BSN.t=n;BSN.v=biome(pl.pos.x,pl.pos.z)[0]}return BSN.v}
+const MOB={on:false,prev:null,run:false,joy:null,look:null,fireT:0,heldAim:false};
+const COARSE=(()=>{try{return matchMedia('(pointer:coarse)').matches||('ontouchstart' in window)}catch(e){return false}})();
+const MOBG={rs:.5,sh:0,gr:.15,pr:.22,vd:.55,pp:0,rays:0,fol:0,gra:0,atm:0,ad:1};
+let adT=0;
+function adaptTick(dt){if(!gfx.ad||TR.on||document.hidden||END.on||EDITING)return;adT+=dt;if(adT<1.2)return;adT=0;const f=window.__fps||0;if(f<=0)return;const tgt=MOB.on?30:50,cap=MOB.on?.8:1.25;let r=gfx.rs;if(f<tgt*.8)r=Math.max(.4,r-.07);else if(f>tgt*1.35)r=Math.min(cap,r+.04);if(Math.abs(r-gfx.rs)>.005){gfx.rs=Math.round(r*100)/100;renderer.setPixelRatio(Math.min(devicePixelRatio,2)*gfx.rs);renderer.setSize(innerWidth,innerHeight);fitRT();const sl=document.querySelector('[data-k=rs]');if(sl)sl.value=gfx.rs}}
+function setMobile(on,quiet){MOB.on=!!on;document.body.classList.toggle('mob',MOB.on);sset('mobile',MOB.on?'1':'0');
+ if(MOB.on){if(!MOB.prev)MOB.prev=Object.assign({},gfx);Object.assign(gfx,MOBG)}else if(MOB.prev){Object.assign(gfx,MOB.prev);gfx.ad=0;MOB.prev=null}
+ applyGfx();const b=$('mmob');b.textContent=MOB.on?'\uD83D\uDCF1 Mobile mode: ON':'\uD83D\uDCF1 Mobile mode';b.classList.remove('rec');
+ if(MOB.on&&!quiet){try{const d=document.documentElement,p=d.requestFullscreen?d.requestFullscreen():(d.webkitRequestFullscreen&&d.webkitRequestFullscreen());if(p&&p.catch)p.catch(()=>{})}catch(e){}try{screen.orientation.lock('landscape').catch(()=>{})}catch(e){}toast('Mobile mode on: graphics lowered, touch controls ready. Sharpness auto-tunes to your phone.')}
+ if(!MOB.on&&!quiet)toast('Desktop mode restored')}
+const tkey=(code)=>{window.dispatchEvent(new KeyboardEvent('keydown',{code,bubbles:true}));window.dispatchEvent(new KeyboardEvent('keyup',{code,bubbles:true}))};
+function mobPrompt(t){if(!MOB.on||!t)return t;const m=/^([A-Z]) - (.*)$/.exec(t);if(!m)return t;return 'Tap '+({E:'USE',F:'MOUNT',H:'HORSE',G:'FISH',B:'TRADE',V:'VIEW'}[m[1]]||m[1])+' \u00B7 '+m[2]}
+function cycleW(d){const NW=WPN.length;let i=pl.wi;for(let k=0;k<NW;k++){i=(i+d+NW)%NW;if(OWN[i]){setWeapon(i);break}}}
+function mobTick(dt){const on=MOB.on&&GAME.on&&!MENUON&&!TR.on&&!END.on&&!EDITING;document.body.classList.toggle('tcon',on);if(!on)return;
+ if(MOB.run)keys.ShiftLeft=true;else if(!MOB.joy||MOB.joy.mag<.9)keys.ShiftLeft=false;
+ $('tcWn').textContent=WPN[pl.wi].n+'  '+pl.ammo;$('tcAim').classList.toggle('on',rmb);$('tcRun').classList.toggle('on',MOB.run);
+ const near=HRS.h&&HRS.mounted;$('tcMnt').textContent=near?'DISMOUNT':'MOUNT'}
+(function buildTouch(){const tc=document.createElement('div');tc.id='tc';
+ tc.innerHTML='<div id="tcLook"></div><div id="tcJoy"><i id="tcKnob"></i></div><button class="tb" id="tcFire">FIRE</button><button class="tb" id="tcAim">AIM</button><button class="tb" id="tcRel">RELOAD</button><button class="tb" id="tcAct">USE</button><button class="tb" id="tcMnt">MOUNT</button><button class="tb" id="tcHrs">HORSE</button><button class="tb" id="tcFsh">FISH</button><button class="tb" id="tcShp">TRADE</button><button class="tb" id="tcVw">VIEW</button><button class="tb" id="tcRun">RUN</button><div id="tcW"><button id="tcWp">&#9664;</button><b id="tcWn">Revolver</b><button id="tcWx">&#9654;</button></div><button class="tb" id="tcMenu">&#9776;</button><div id="tcSheet"><button id="tsGfx">Graphics settings</button><button id="tsInfo">Info and controls</button><button id="tsAct">Activities panel</button><button id="tsClose">Close panels</button><button id="tsFull">Fullscreen</button><button id="tsDesk">Desktop mode</button><button id="tsMenu">Main menu (restarts)</button></div>';
+ document.body.appendChild(tc);const rot=document.createElement('div');rot.id='tcRot';rot.innerHTML='Rotate your phone<br>to landscape';document.body.appendChild(rot);
+ tc.addEventListener('touchstart',e=>{e.preventDefault()},{passive:false});tc.addEventListener('contextmenu',e=>e.preventDefault());
+ document.addEventListener('touchmove',e=>{if(MOB.on&&!e.target.closest('#shop,#info,#gfx,.p,#menu,#tcSheet,#hwd,#tcRot'))e.preventDefault()},{passive:false});
+ const hold=(id,down,up)=>{const b=$(id);b.addEventListener('pointerdown',e=>{e.preventDefault();initAudio();try{if(AC&&AC.state==='suspended')AC.resume()}catch(_){}try{b.setPointerCapture(e.pointerId)}catch(_){}down&&down()});const end=()=>up&&up();b.addEventListener('pointerup',end);b.addEventListener('pointercancel',end)};
+ hold('tcFire',()=>{if(DLG.on){advance();return}fire();clearInterval(MOB.fireT);MOB.fireT=setInterval(()=>fire(),120)},()=>clearInterval(MOB.fireT));
+ hold('tcAim',()=>{rmb=!rmb});hold('tcRel',()=>reload());hold('tcAct',()=>{if(DLG.on)advance();else tkey('KeyE')});hold('tcMnt',()=>tkey('KeyF'));hold('tcHrs',()=>tkey('KeyH'));hold('tcFsh',()=>tkey('KeyG'));hold('tcShp',()=>tkey('KeyB'));hold('tcVw',()=>{fp=!fp});hold('tcRun',()=>{MOB.run=!MOB.run});
+ hold('tcWp',()=>cycleW(-1));hold('tcWx',()=>cycleW(1));hold('tcMenu',()=>$('tcSheet').classList.toggle('on'));
+ const sh=(id,fn)=>$(id).addEventListener('pointerup',e=>{e.preventDefault();fn();$('tcSheet').classList.remove('on')});
+ sh('tsGfx',()=>$('gfx').classList.toggle('on'));sh('tsInfo',()=>{if(INFO)closeUI();else openInfo()});sh('tsAct',()=>document.body.classList.toggle('mobp'));sh('tsClose',()=>{closeUI();$('gfx').classList.remove('on');document.body.classList.remove('mobp')});
+ sh('tsFull',()=>{try{const d=document.documentElement,p=d.requestFullscreen?d.requestFullscreen():d.webkitRequestFullscreen&&d.webkitRequestFullscreen();if(p&&p.catch)p.catch(()=>{})}catch(e){}});sh('tsDesk',()=>setMobile(false));sh('tsMenu',()=>location.reload());
+ // movement stick
+ const joy=$('tcJoy'),knob=$('tcKnob');const setKeys=(dx,dy)=>{keys.KeyW=dy<-.35;keys.KeyS=dy>.35;keys.KeyA=dx<-.35;keys.KeyD=dx>.35};
+ const joyMove=e=>{const r=joy.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,R=r.width/2;let dx=(e.clientX-cx)/R,dy=(e.clientY-cy)/R;const m=Math.hypot(dx,dy);if(m>1){dx/=m;dy/=m}knob.style.transform='translate('+dx*R*.55+'px,'+dy*R*.55+'px)';MOB.joy.mag=Math.min(1,m);setKeys(m<.22?0:dx,m<.22?0:dy);if(m>.9)keys.ShiftLeft=true};
+ joy.addEventListener('pointerdown',e=>{e.preventDefault();initAudio();try{joy.setPointerCapture(e.pointerId)}catch(_){}MOB.joy={id:e.pointerId,mag:0};joyMove(e)});joy.addEventListener('pointermove',e=>{if(MOB.joy&&MOB.joy.id===e.pointerId)joyMove(e)});
+ const joyEnd=e=>{if(MOB.joy&&MOB.joy.id===e.pointerId){MOB.joy=null;knob.style.transform='';setKeys(0,0);if(!MOB.run)keys.ShiftLeft=false}};joy.addEventListener('pointerup',joyEnd);joy.addEventListener('pointercancel',joyEnd);
+ // look pad (drag anywhere that isn't a button); tap advances dialogue
+ const lk=$('tcLook');let lx=0,ly=0,lt=0,lm=0;lk.addEventListener('pointerdown',e=>{e.preventDefault();initAudio();try{lk.setPointerCapture(e.pointerId)}catch(_){}MOB.look={id:e.pointerId};lx=e.clientX;ly=e.clientY;lt=performance.now();lm=0;if(DLG.on)advance()});
+ lk.addEventListener('pointermove',e=>{if(!MOB.look||MOB.look.id!==e.pointerId)return;const dx=e.clientX-lx,dy=e.clientY-ly;lx=e.clientX;ly=e.clientY;lm+=Math.abs(dx)+Math.abs(dy);if(DLG.on||SHOP||INFO||pl.dead)return;const s=rmb?.0026:.0045;yaw-=dx*s;pitch=Math.max(-.9,Math.min(1,pitch-dy*s))});
+ const lkEnd=e=>{if(MOB.look&&MOB.look.id===e.pointerId)MOB.look=null};lk.addEventListener('pointerup',lkEnd);lk.addEventListener('pointercancel',lkEnd)})();
+$('mmob').onclick=()=>setMobile(!MOB.on);
+if(COARSE&&sget('mobile')===null)$('mmob').classList.add('rec');
+if(sget('mobile')==='1')setMobile(true,true);
+
+Object.assign(window.__g,{MOB,setMobile,adaptTick,keys,getYaw:()=>yaw,getPitch:()=>pitch,getRmb:()=>rmb,bsnow,mobPrompt,cycleW});
 /* ---------- main loop ---------- */
 const clk=new THREE.Clock();let fN=0,fT=performance.now(),fov=62;
 function loop(){requestAnimationFrame(loop);const raw=clk.getDelta(),dt=Math.min(raw,.05),T=clk.elapsedTime;bmTick(raw,dt);menuTick(raw);
  fN++;if(performance.now()-fT>1000){$('fps').textContent=fN+' fps';fN=0;fT=performance.now()}
  if($('auto').checked){{const el=Math.sin((tod-.25)*6.2832);tod=(tod+dt*TSP/(el<-.1?897:1128))%1}$('tod').value=tod}
- const snowF=(MAPJ||MAPM)?1:sm(.25,.55,biome(pl.pos.x,pl.pos.z)[0]);bz+=(bzT*snowF-bz)*Math.min(1,dt*.8);natRainTick();scene.fog.density=gU.uFogD.value=(MAPM?WXs.fog:MAPJ?.011:.006)/gfx.vd+.026*bz+.012*rnK;setTod();
+ const snowF=(MAPJ||MAPM)?1:sm(.25,.55,bsnow());bz+=(bzT*snowF-bz)*Math.min(1,dt*.8);natRainTick();scene.fog.density=gU.uFogD.value=(MAPM?WXs.fog:MAPJ?.011:.006)/gfx.vd+.026*bz+.012*rnK;setTod();
  const uw=camera.position.y<WL;if(uw){scene.fog.density=gU.uFogD.value=.09;scene.fog.color.setRGB(.02,.16,.18)}$('uw').style.opacity=uw?1:0;
 
  if(TR.on)trailerTick(dt,T);
